@@ -3,7 +3,7 @@
 % Exercise 4 part2
 %  Discrete Fourier Transform & Image Compression
 
-%% Discrete Fourier Transform Part 1
+%% Discrete Fourier Transform
 
 close all; clear;
 
@@ -81,11 +81,3 @@ for k = 1:(length(myFiles))
 %         saveas(gcf, [fullFileName, '_new', num2str(alpha(i)),'.png'])
     end
 end
-
-%% Discrete Fourier Transform Part 2
-
-
-
-
-
-
