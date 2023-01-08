@@ -340,10 +340,15 @@ for j = 1:size(img1_resize,2)
     end
 end
 
+spatial_coord1 = spatial_coord1/max(max(spatial_coord1));
+spatial_coord2 = spatial_coord2/max(max(spatial_coord2));
+spatial_coord3 = spatial_coord3/max(max(spatial_coord3));
+
 % Concatenating the two matrices
 coord_data1 = [colour_data1_resize spatial_coord1];
 coord_data2 = [colour_data2_resize spatial_coord2];
 coord_data3 = [colour_data3_resize spatial_coord3];
+
 
 bw = [0.2, 0.35, 0.6];
 
