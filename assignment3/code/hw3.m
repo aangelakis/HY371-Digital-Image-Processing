@@ -20,7 +20,7 @@ kernel = [0 -1 0;
           -1 5 -1;
           0 -1 0;];
       
-[conved_I_a, peos] = my_conv(img, kernel);
+[conved_I_a, ~] = my_conv(img, kernel);
 
 figure;
 subplot(1,2,1); imshow(conved_I_a); title('Filtered Image');
